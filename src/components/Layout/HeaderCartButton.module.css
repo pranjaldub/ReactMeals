@@ -1,0 +1,56 @@
+.header-button {
+    border-radius: 30px;
+    background-color: cadetblue;
+    color: black;
+    padding: 10px 10px 10px 0px;
+    outline: none;
+    border: none;
+    width: 10rem;
+}
+
+.header-button:hover {
+
+    transition: all 0.2s ease-in;
+    outline: 1px cyan;
+    cursor: pointer;
+    animation: shiftcolor 0.2s ease-in forwards;
+}
+
+.header-button:hover .digit {
+    position: absolute;
+    top: 25px;
+    right: 188px;
+    border-radius: 70%;
+    background-color: cadetblue;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    color: white;
+
+}
+
+span {
+    padding: 5px;
+    align-items: center;
+}
+
+.digit {
+    position: absolute;
+    top: 25px;
+    right: 188px;
+    border-radius: 70%;
+    background-color: floralwhite;
+    height: auto;
+    width: auto;
+    padding: 15px;
+}
+
+@keyframes shiftcolor {
+    0% {}
+
+    100% {
+        background: linear-gradient(to right, rgb(250, 249, 248) 50%, rgb(58, 137, 161) 50%);
+        background-size: 200% 100%;
+        background-position: left bottom;
+    }
+}
